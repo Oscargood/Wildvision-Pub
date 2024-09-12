@@ -5,12 +5,11 @@ const weatherMap = document.getElementById('weatherMap');
 const overlayToggle = document.getElementById('overlayToggle');
 
 // Array of dates corresponding to each day
-const forecastDates = [
-    '2024-09-12',  // Day 1
-    '2024-09-13',  // Day 2
-    '2024-09-14',  // Day 3
-    '2024-09-15',  // Day 4
-    '2024-09-16'   // Day 5
+const forecastDates = Array.from({ length: 5 }, (_, i) => {
+    const date = new Date();
+    date.setDate(date.getDate() + i);  // Add i days to the current date
+    return date.toISOString().split('T')[0];  // Format as YYYY-MM-DD
+});
 ];
 
 // Function to update the map based on the slider value (day index)
