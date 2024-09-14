@@ -46,15 +46,26 @@ header {
     background-color: #007bff;
     color: white;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-.slider {
-    width: 200px;
+button {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.toggle-label {
-    margin-left: 20px;
+button:hover {
+    background-color: #004494;
 }
 
 /* Map container */
@@ -74,4 +85,3 @@ iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
