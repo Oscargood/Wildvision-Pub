@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildvisionp</title>
+    <title>NZ Weather Map</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,29 +12,22 @@
             <img src="logo.png" alt="Weather Logo" class="logo-img">
         </div>
         <div class="hint-bar" id="hintBar">
-            Today's hint: Animals will be more active today!
+            Today's hint: The weather in New Zealand is dynamic, always check for the latest updates!
         </div>
     </header>
 
     <div class="controls">
-        <!-- Slider to change the day -->
-        <label for="daySlider">Select Day:</label>
-        <input type="range" id="daySlider" min="0" max="4" value="0" step="1" class="slider">
-        <span id="selectedDay">Day 1</span>
-
-        <!-- Toggle button to turn overlay on/off -->
-        <label for="overlayToggle" class="toggle-label">Toggle Overlay</label>
-        <input type="checkbox" id="overlayToggle" checked>
+        <!-- Buttons to select day -->
+        <button id="day1Button">Day 1</button>
+        <button id="day2Button">Day 2</button>
+        <button id="day3Button">Day 3</button>
+        <button id="day4Button">Day 4</button>
+        <button id="day5Button">Day 5</button>
     </div>
 
     <div class="map-container">
         <iframe src="nz_weather_2024-09-12.html" id="weatherMap" frameborder="0"></iframe>
     </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
 
     <script src="script.js"></script>
 </body>
